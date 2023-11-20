@@ -1,1 +1,0 @@
-# systematic_ad_analysis
