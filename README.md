@@ -17,7 +17,7 @@ Here, we employ single-nucleus RNA-sequencing data from various brain regions to
 
 #### snRNAseq Data Availability
 
-For processing `raw counts matrices and associated metadata` and `fully-annotated and QC-ed data`:
+For processing `raw counts matrices, associated metadata, fully-annotated and QC-ed data`:
 
 - [Leng et al., 2021](https://doi.org/10.1038/s41593-020-00764-7) files available at AD Knowledge Portal, Synapse ID: [syn21788402](https://www.synapse.org/#!Synapse:syn21788402).
 - [Gabitto et al., 2023](https://www.biorxiv.org/content/10.1101/2023.05.08.539485v2) data at the [SEA-AD Documentation Page](https://portal.brain-map.org/explore/seattle-alzheimers-disease/seattle-alzheimers-disease-brain-cell-atlas-download?edit&language=en).
