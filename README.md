@@ -8,15 +8,14 @@
 
 Here, we employ single-nucleus RNA-sequencing data from various brain regions to perform a comprehensive analysis of Alzheimer's disease (AD). We goes beyond traditional differential gene expression (DEG) analysis by integrating pathway activity analysis with weighted gene co-expression networks. This approach allows for a detailed mapping of gene interconnectivity and the identification of region- and cell-type-specific drivers of AD-related biological processes. The findings reveal significant heterogeneity in modular organization and functional disruptions in both neuronal and glial cells, with extended involvement of astrocytes and microglia in various processes beyond neuroinflammation. Our study also observes limited overlap of DEGs within perturbed pathways, indicating that DEGs might not fully represent the disease's complexity. Further, we show distinct dynamics of hub DEGs in neuronal versus glial modules, suggesting a greater impact of DEGs on neurons than on glial cells. These results underscore the importance of a systems-oriented approach, combining pathway enrichment and co-expression methods, for a comprehensive understanding of AD-related biological processes.
 
-
 #### Paper
 [Access the Paper Here](...)
-
-#### snRNAseq Data Availability
 
 <p align="center">
   <img src="Figure 1.png" width="800" title="hover text">
 </p>
+
+#### snRNAseq Data Availability
 
 For processing `raw counts matrices and associated metadata` and `fully-annotated and QC-ed data`:
 
