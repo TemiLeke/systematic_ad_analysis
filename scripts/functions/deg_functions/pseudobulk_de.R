@@ -85,6 +85,22 @@ pseudobulk_de = function(input,
       mutate(group = gsub(".*\\:", "", group_sample)) %>%
       mutate(replicate = as.character(gsub(":.*", "", group_sample)))
 
+    
+    # # Ensure the 'replicate' column in 'meta' is also character
+    # meta$replicate <- as.character(meta$replicate)
+
+    # # Merge the targets with meta based on 'replicate'
+    # targets <- merge(targets, meta, by = "replicate", all.x = TRUE)
+
+    # Map values from meta into targets for each variable in latent_vars
+    for (var in latent_vars) {
+      mapping_dict <- setNames(meta[[var]], meta[[replicate_col]])
+      targets[var] <- map_chr(targets$replicate, ~ mapping_dict[.x])
+    }
+    # Convert latent_vars columns to factors
+    targets <- targets %>% 
+      mutate(across(all_of(latent_vars), as.factor))
+
     # temp_meta <- distinct(meta, replicate, .keep_all = TRUE)
     # temp_meta$replicate = temp_meta[, replicate_col]
     # # temp_meta <- mutate_all(temp_meta, as.factor)

@@ -186,12 +186,24 @@ get_matrix = function(scores, top_paths){
     df = do.call('rbind', scores)
     # Transform the scores into a matrix, with one row per gene set and one column per cell type
     df$score = sign(df$logFC) * -log10(df$P.Value)
+    
+    # Check if there's only one unique celltype
+    if(length(unique(df$celltype)) == 1) {
+    unique_celltype <- unique(df$celltype)[[1]]
+    df[[unique_celltype]] <- df$score
+    df$score <- NULL
+    df$celltype <- NULL
+    } else {
+    # If there's more than one celltype, use pivot_wider as before
     df = as.data.frame(pivot_wider(df[,c('celltype', 'names', 'score')], values_from = 'score', names_from = 'celltype'))
+    }
     # Replace missing values with 0
+
     df[is.na(df)] = 0
     # Use the gene set names as row names
     rownames(df) = df$names
     df$names = NULL
+    
     return(df[top_paths,])
 }
 
