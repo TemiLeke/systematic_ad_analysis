@@ -14,9 +14,9 @@ Here, we employ single-nucleus RNA-sequencing data from various brain regions to
 
 #### snRNAseq Data Availability
 
-<div align="center">
-  <img src="Figue 1.png" width="800" alt="Data Schematic">
-</div>
+<p align="center">
+  <img src="Figure 1.png" width="800" title="hover text">
+</p>
 
 For processing `raw counts matrices and associated metadata` and `fully-annotated and QC-ed data`:
 
