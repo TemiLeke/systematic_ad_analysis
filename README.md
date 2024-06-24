@@ -9,7 +9,7 @@
 Here, we employ single-nucleus RNA-sequencing data from various brain regions to perform a comprehensive analysis of Alzheimer's disease (AD). We goes beyond traditional differential gene expression (DEG) analysis by integrating pathway activity analysis with weighted gene co-expression networks. This approach allows for a detailed mapping of gene interconnectivity and the identification of region- and cell-type-specific drivers of AD-related biological processes. The findings reveal significant heterogeneity in modular organization and functional disruptions in both neuronal and glial cells, with extended involvement of astrocytes and microglia in various processes beyond neuroinflammation. Our study also observes limited overlap of DEGs within perturbed pathways, indicating that DEGs might not fully represent the disease's complexity. Further, we show distinct dynamics of hub DEGs in neuronal versus glial modules, suggesting a greater impact of DEGs on neurons than on glial cells. These results underscore the importance of a systems-oriented approach, combining pathway enrichment and co-expression methods, for a comprehensive understanding of AD-related biological processes.
 
 #### Paper
-[Access the Paper Here](...)
+[Access the Paper Here](https://www.aginganddisease.org/EN/10.14336/AD.2024.0429)
 
 <p align="center">
   <img src="Figure 1.png" width="800" title="hover text">
@@ -68,11 +68,9 @@ conda activate systematic_ad_analysis
 
 If you use the methods and scripts provided here, please cite:
 
-`Adeoye, T, Shah, S.I., Ullah, G. Systematic Analysis of Biological Processes Reveals Gene Co-expression Modules Driving Pathway Dysregulation in Alzheimer’s Disease. (2023).`
+`Adeoye, T., Shah, S. I. & Ullah, G. Systematic Analysis of Biological Processes Reveals Gene Co-expression Modules Driving Pathway Dysregulation in Alzheimer’s Disease. Aging Dis. 0 (2024) doi:10.14336/AD.2024.0429.`
 
 
 ### Contact
 
-For questions, inconsistencies, help requests, or ideas for future collaborations, reach out at tadeoye@usf.edu
-
-If you have any questions, notice any inconsistencies, need help, or would like to brainstorm future collaborations and ideas, please don't hesitate to reach out: `tadeoye@usf.edu``
+If you have any questions, notice any inconsistencies, need help, or would like to brainstorm future collaborations and ideas, please don't hesitate to reach out: at `tadeoye{at}usf{dot}edu` or at `gullah{at}usf{dot}edu`
